@@ -83,7 +83,6 @@ jobs:
         run: ./mvnw verify -pl '!curator-test-zk38,!curator-test-zk37,!curator-test-zk36,!curator-test-zk35'
 
   zk-compatibility-test:
-    name:  ZooKeeper Compatibility tests
     runs-on: ubuntu-latest
     timeout-minutes: 180
     strategy:
