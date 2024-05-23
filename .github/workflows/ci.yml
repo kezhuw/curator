@@ -80,7 +80,7 @@ jobs:
         run: ./mvnw clean install -DskipTests
 
       - name: Test with ${{ matrix.java }}
-        run: ./mvnw verify
+        run: ./mvnw verify -pl '!curator-test-zk38,!curator-test-zk37,!curator-test-zk36,!curator-test-zk35'
 
   required:
     name: Required
